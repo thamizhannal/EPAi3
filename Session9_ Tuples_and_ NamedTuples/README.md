@@ -15,6 +15,7 @@
 #### Name : Thamizhannal Paramasivam
 #### Email: annalwins@gmail.com
 <br>
+
 ### Faker Library:
 Once Faker library is installed, it can used to get fake profiles of a person's and identities.
 An example to get fake profile
