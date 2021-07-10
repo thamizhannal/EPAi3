@@ -64,17 +64,17 @@ def test_create_fake_profile_namedtuple():
     global input1
     random.seed(10)
 
-    input1 = session9.create_fake_profile_namedtuple(9)
+    input1 = session9.create_fake_profile_namedtuple(9999)
     # Here one additionl entry used initializaiton
-    assert 10 == len(input1),"you should have to create 10000 entries"
+    assert 10000 == len(input1),"you should have to create 10000 entries"
 
 
 def test_create_fake_profile_dict():
     global input2
     random.seed(10)
 
-    input2 = session9.create_fake_profile_dict(10)
-    assert 10 == len(input2),"you have to create 10000 profiles "
+    input2 = session9.create_fake_profile_dict(10000)
+    assert 10000 == len(input2),"you have to create 10000 profiles "
 
 def test_oldest_person_time_check():
     assert session9.oldest_person_age_namedtuple(input1)[0] <= \
