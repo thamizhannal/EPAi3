@@ -186,12 +186,6 @@ Class that stores sequences of Polygon objects and have couple of helper methods
 This method computes the maximum_efficiency and returns the string displaying the output
 ```
 
-```
-
-
-
-
-```
 
 **generate polygon:**
 
