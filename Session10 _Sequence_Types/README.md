@@ -6,6 +6,9 @@ Name: Thamizhannal
 
 Email: annalwins@gmail.com
 
+Colab link: https://colab.research.google.com/drive/16WDVvu7VlRzZ-gyAguwTwUy-D52T9Gcp#scrollTo=EFzFmI1mclSX
+
+
 
 
 1. A regular strictly convex polygon is a polygon that has the following characteristics:
