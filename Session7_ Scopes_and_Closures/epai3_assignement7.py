@@ -134,7 +134,7 @@ def functional_counter():
     returns: function value as return type
     """
     
-    nonlocal counter_dict 
+    #nonlocal counter_dict 
     counter_dict[fn.__name__] = counter_dict.get(fn.__name__, 0) + 1
     fun_counters[fn.__name__] = counter_dict[fn.__name__] 
     return fn(*args, **kwargs)
