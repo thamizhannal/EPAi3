@@ -1,7 +1,5 @@
 import math
-from session11 import Polygon
-
-
+from Polygon import Polygon
 
 def test_polygon():
     abs_tol = 0.001
@@ -21,7 +19,9 @@ def test_polygon():
     assert p.count_vertices == n, (f'actual: {p.count_vertices},'
                                    f' expected: {n}')
     assert p.count_edges == n, f'actual: {p.count_edges}, expected: {n}'
-    assert p.circumradius == R, f'actual: {p.circumradius}, expected: {n}'
+    assert p.circumradius == R, f'actual: {p.circumradius}, expected: {R}'
+
+    
     assert p.interior_angle == 60, (f'actual: {p.interior_angle},'
                                     ' expected: 60')
     n = 4
@@ -78,8 +78,11 @@ def test_polygon():
     p4 = Polygon(15, 100)
     p5 = Polygon(15, 100)
 
-    assert p2 > p1
+    assert p2 > p1 
     assert p2 < p3
     assert p3 != p4
     assert p1 != p4
     assert p4 == p5
+if __name__ == "__main__":
+    test_polygon()
+    print("All tests passed successfully!")
