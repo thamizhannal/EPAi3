@@ -15,7 +15,7 @@ Original file is located at
 # 50 is stored as a free variable (+ 4 tests) - 200
 
 # add_nums() is the method for which doc string length is going to be computed .
-def add_nums(num1=0, num2=0):  
+def add_nums(num1=0, num2=0):
   """Summary or Description of the Function
   Function to add two numbers and returns val as int.
 
@@ -38,10 +38,10 @@ def doc_str_validator(fun):
   
   """
   # max_doc_str_len is free variable
-  max_doc_str_len = 50 # Maximul value of doc string
+  max_doc_str_len = 10 # Maximul value of doc string
 
   def check_doc_str_len():
-    nonlocal max_doc_str_len
+    #nonlocal max_doc_str_len
     if len(fun.__doc__) > max_doc_str_len:
       print("{} function does have doc string with > {} charecters.".format(fun.__name__, max_doc_str_len))
       return True
@@ -50,8 +50,6 @@ def doc_str_validator(fun):
       return False
   return check_doc_str_len
 
-fn = doc_str_validator(add_nums)
-fn()
 
 # Q2. Write a closure that gives you the next Fibonacci number (+ 2 tests) - 100
 # 
@@ -89,6 +87,7 @@ def fib_closure(n):
   fn = fib()
   for i in range(2, n+1):
     num = fn()    
+    print(num, end=" ")
   return num
 
 #fib_closure(10) # Uncomment to run this code
@@ -119,8 +118,7 @@ def div(a,b):
   """
   return (a/b)
 
-# global function call counter dictionary
-fun_counters = dict()
+
 
 def functional_counter():
   """
@@ -189,3 +187,40 @@ fn(div,4,2)
 print(custom_dict)
 
 """
+
+if __name__ == "__main__":
+  print("Hello")
+  
+  # Question1
+  fn = doc_str_validator(add_nums)
+  fn()
+
+  # Question2
+  fib_closure(10)
+
+  # Question3
+  # global function call counter dictionary
+  fun_counters = dict()
+  # Execution steps:
+  fn = functional_counter(fun_counters)
+  fn(add,3,3)
+  fn(add,3,3)
+  fn(add,3,3)
+
+  fn(mult,3,3)
+  fn(mult,3,3)
+
+
+  fn(div,9,3)
+  fn(div,4,2)
+  print(fun_counters)
+
+
+  # Question4
+  custom_dict = dict()
+  fn = functional_counter(custom_dict)
+  fn(add,3,3)
+  fn(add,3,3)
+
+  fn(div,4,2)
+  print(custom_dict)
