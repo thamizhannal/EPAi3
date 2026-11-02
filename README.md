@@ -31,3 +31,61 @@ The first phase establishes an elite foundation in advanced Python mechanics:
 * **Generators & Iteration Tools**: Generator functions (`yield`), generator expressions, `yield from`, aggregators, chaining, teeing, and zipping.
 * **Context Managers**: Custom context managers, lazy iterators, generators as context managers, and nested applications.
 * **Coroutines & Data Pipelines**: Coroutines, generator states, exception handling, and building robust data pipelines.
+
+## 🚀 PHASE #2 - OOPS & PYTORCH
+
+---
+
+### 🔹 Advanced Object-Oriented Programming (OOP) in Python
+
+* **Hash Maps and Dictionaries**: Associative arrays, hash maps, hash functions, dictionary views, handling dictionaries, and custom classes.
+* **Sets and Serialized Dictionaries**: Set theory, Python sets, frozen sets, set applications, `DefaultDict`, `OrderedDict`, `Counters`, and `UserDict`.
+* **Serialization and Deserialization**: Pickling, JSON serialization, encoding and decoding JSON, and practical applications.
+* **Classes (Part I)**: Objects and classes, attributes, callables, functional attributes, and run-time attributes.
+* **Classes (Part II) + Dataclasses**: Properties, decorators, read-only properties, class and static methods, scopes, dataclasses, and applications.
+* **Polymorphism and Special Methods**: Polymorphism, `__str__` and `__repr__` methods, rich comparisons, hashing and equality, callables, and applications.
+* **Single Inheritance**: Single inheritance, object class, overriding, extending, delegation, slots, and applications.
+* **Descriptors**: Descriptors, getters and setters, instance properties, strong and weak references, `__set_name__` method, property lookup resolution, and applications.
+* **Enumerations and Exceptions**: Enumerations, aliases, custom enums, Python exceptions, handling/raising exceptions, and creating custom exceptions.
+
+---
+
+### 🔹 PyTorch Fundamentals & Internals
+
+* **PyTorch Basics I**: Matrices, tensors, variables, NumPy and PyTorch interoperability, rank, axes, and shapes.
+* **PyTorch Basics II**: Data and `DataLoader`, forward method, training loop, and training pipeline.
+* **PyTorch Intermediate I & Internals**: PyTorch classes, containers, layers, and activations. PyTorch internals (how PyTorch uses advanced Python internally).
+* **PyTorch Intermediate II**: Distance and basic loss functions, utilities, profiling layers, MACs/FLOPs calculations, and memory usage.
+* **PyTorch Advanced I**: Convolution algorithm implementation, autograd mechanics, and dynamic computation graphs.
+* **PyTorch Advanced II**: Optimizers, custom `DataLoader`s, TensorBoard integration, memory management, and half-precision training.
+* **PyTorch Advanced III**: Advanced loss functions for GAN, Kullback-Leibler, embeddings, Focal, IoU, Perceptual, CTC, Triplet, and DICE.
+
+
+## 📚 Session Timeline
+* Session 0 - Introduction to the course
+
+* Session 1 - Quick Refresher
+
+* Session 2 - Object Mutability & Interning
+
+* Session 3 - Numerical Types I
+
+* Session 4 - Numerical Types II
+
+* Session 6 - First Class Functions
+
+* Session 7 - Scopes & Closures
+
+* Session 8 - Tuples & Named Tuples
+
+* Session 9 - Tuples & Named Tuples
+
+* Session 10 - Sequence Types
+
+* Session 11 - Iterables and Iterators - I
+
+* Session 12 - Iterables and Iterators - II
+
+* Session 13 - Generators and Iteration Tools
+
+* Session 14 - Context Managers
